@@ -53,9 +53,8 @@ let click = (color) => {
   
   setTimeout(() => {
     createColorElement(color).classlist.remove('.selected');
+    checkOrder();
   });
-  
-  checkOrder();
 }
 
 //Retorna cor
@@ -71,3 +70,40 @@ let createColorElement = (color) => {
   }
 }
 
+//Proximo Nivel
+let nextLevel = () =>{
+  score ++;
+  shuffleOrder();
+}
+
+//Jogo perdido
+let lose = () =>{
+  alert("Pontuação: $(score)/nVocê perdeu o jogo!/n Clique em ok");
+  order = [];
+  clickedOrder = [];
+  
+  playGame();
+}
+
+//Iniciar
+let playGame = () => {
+  alert('Bem vindo ao Genesis!');
+  score = 0;
+  
+  nextLevel();
+}
+
+/*pink.addEventListeneer('click',click(0));
+red.addEventListeneer('click',click(1));
+purple.addEventListeneer('click',click(2));
+blue.addEventListeneer('click',click(3));
+*/
+
+//eventos clique por cor
+pink.onclick = () => click(0);
+red.onclick = () => click(1);
+purple.onclick = () => click(2);
+blue.onclick = () => click(3);
+
+//Inicio do jogo
+playGame();
