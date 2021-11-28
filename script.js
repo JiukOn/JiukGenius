@@ -75,7 +75,7 @@ let createColorElement = (color) => {
 
 //Proximo nivel do jogo
 let nextLevel = () => {
-    score++;
+    score+=5;
     shuffleOrder();
 }
 
@@ -90,7 +90,7 @@ let gameOver = () => {
 
 //Inicio do jogo
 let playGame = () => {
-    alert('Bem vindo ao Gênesis!');
+    alert('Bem vindo ao JiukGênio!');
     score = 0;
 
     nextLevel();
