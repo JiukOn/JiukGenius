@@ -19,3 +19,26 @@ for(let i in order){
   LightColor(elementColor,Number(i) + 1);
   }
 }
+
+let LightColor = (element, number) => {
+  number = number* 500;
+  
+  setTimeout(() => {
+    element.classlist.add('.selected')
+  }, number - 250);
+  setTimeout(() => {
+    element.classlist.remove('.selected')
+  });
+}
+
+let checkOrder = () => {
+  for( let i in clickedOrder){
+    if(clickedOrder[i] != order[i]){
+      lose();
+      break;
+    }
+  }
+  if(clickedOrder.length == order.length){
+    alert('Pontuação: ${score}')
+  }
+}
