@@ -13,11 +13,40 @@ body {
 
 .genius{
   display: grid;
-  grid-template-areas: 'blue red' 'purple pink';
+  grid-template-areas: 'ablue ared' 'apurple apink';
   grid-gap: 10px;
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
+  border: 1px solid #0c0017;
+  background-color: #0c0017;
   border-radius: 100%;
   width: 700px;
-  height: 700
+  height: 700px;
+}
+
+.blue{
+  
+grid-area: ablue;
+  background-color: blue;
+  border-botton-right-radius: 100%;
+  }
+.red{
+  
+grid-area: ared;
+  background-color: red;
+  border-top-right-radius: 100%;
+  }
+.purple{
+  
+grid-area: apurple;
+  background-color: purple;
+  border-botton-left-radius: 100%;
+  }
+.pink{
+  
+grid-area: apink;
+  background-color: pink;
+  border-top-left-radius: 100%;
+  }
+
+.selected{
+   opacity: 0.8;
 }
