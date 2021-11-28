@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(222, 176, 245);
+    background-color: rgb(188, 154, 214);
 }
 
 .main-game {
@@ -25,28 +25,28 @@ body {
 
 .blue {
     grid-area: ablue;
-    background-color: blue;
+    background-color: rgb(97, 102, 232);
     border-bottom-right-radius: 100%;
 }
 
 .red {
     grid-area: ared;
-    background-color: red;
+    background-color: rgb(232, 97, 97);
     border-top-right-radius: 100%;
 }
 
 .pink{
     grid-area: apink;
-    background-color: pink;
-    border-bottom-left-radius: 100%;
+    background-color: rgb(232, 104, 230);
+    border-top-left-radius: 100%;
 }
 
 .purple {
     grid-area: apurple;
-    background-color: purple;
-    border-top-left-radius: 100%;
+    background-color: rgb(165, 84, 227);
+    border-bottom-left-radius: 100%;
 }
 
 .selected {
-    opacity: 0.5;
+    opacity: 0.8;
 }
