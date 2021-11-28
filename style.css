@@ -1,52 +1,52 @@
 body {
-  margin: 0;
-  background-color: rgb(172, 128, 217);
-  
-}
-.main-game{
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0;
+    background-color: rgb(222, 176, 245);
 }
 
-.genius{
-  display: grid;
-  grid-template-areas: 'ablue ared' 'apurple apink';
-  grid-gap: 10px;
-  border: 1px solid #0c0017;
-  background-color: #0c0017;
-  border-radius: 100%;
-  width: 700px;
-  height: 700px;
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.blue{
-  
-grid-area: ablue;
-  background-color: blue;
-  border-botton-right-radius: 100%;
-  }
-.red{
-  
-grid-area: ared;
-  background-color: red;
-  border-top-right-radius: 100%;
-  }
-.purple{
-  
-grid-area: apurple;
-  background-color: purple;
-  border-botton-left-radius: 100%;
-  }
+.genius {
+    display: grid;
+    grid-template-areas: 'apink ared'
+    'apurple ablue';
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    grid-area: ablue;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: ared;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
 .pink{
-  
-grid-area: apink;
-  background-color: pink;
-  border-top-left-radius: 100%;
-  }
+    grid-area: apink;
+    background-color: pink;
+    border-bottom-left-radius: 100%;
+}
 
-.selected{
-   opacity: 0.8;
+.purple {
+    grid-area: apurple;
+    background-color: purple;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.5;
 }
