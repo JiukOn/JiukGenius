@@ -44,8 +44,9 @@ let checkOrder = () => {
         }
     }
     if(clickedOrder.length == order.length) {
-        alert(`Pontuação: ${score}\nVocê acertou!`);
+      setTimeout(() => {
         nextLevel();
+      }, 400);
     }
 }
 
@@ -105,6 +106,5 @@ blue.onclick = () => click(3);
 
 //inicio do jogo
 playGame();
-
 
 //.--- .. ..- -.- --- -.
